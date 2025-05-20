@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    background-color: #f0f0f0;
+    color: #3d3d5c;
+    line-height: 1.6;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 64px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #7c3aed;
+}
+
+.logo span {
+    color: #3d3d5c;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3d3d5c;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7c3aed;
+}
+
+.social-icons a {
+    color: #3d3d5c;
+    font-size: 1.2rem;
+    margin-left: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #7c3aed;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    gap: 64px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    color: #3f3d56;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.intro-text h1 span strong {
+    color: #7c3aed;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid #7c3aed;
+    object-fit: cover;
+}
+
+#tech-stack {
+    text-align: center;
+    padding: 60px 0;
+}
+
+#tech-stack h2, #projects h2, #contact h2 {
+    font-size: 2rem;
+    color: #3f3d56;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.tech-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tech-icons img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#projects {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.project-card {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 0 0 20px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 15px;
+}
+
+.project-card h3{
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    color: #3f3d56;
+}
+
+.project-card p {
+    padding: 0 20px;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.project-card .buttons {
+    padding: 0 20px;
+}
+
+.project-card .buttons .btn {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #7c3aed;
+    font-weight: 600;
+    border: 1px solid #7c3aed;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-card .buttons .btn:hover {
+    background-color: #7c3aed;
+    color: #fff;
+}
+
+#contact {
+  text-align: center;
+  padding: 60px 0;
+}
+
+footer{
+    margin-top: 60px;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+.footer-logo span {
+    color: #3d3d5c;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    color: #3d3d5c;
+    font-size: 1.2rem;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #7c3aed;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    #intro {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tech-icons {
+        gap: 20px;
+    }
+
+    .tech-icons img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-card {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-logo, .footer-contact, .footer-social {
+        text-align: center;
+    }
+}
+
