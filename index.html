@@ -1,149 +1,267 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>토리의 포트폴리오</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tori · Portfolio</title>
+
+  <!-- Google Font – 필요 시 교체 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <!-- 메인 스타일 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <header>
-        <div class="logo"> {007} <span>pavamg</span></div>
-        <nav>
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tech-stack">Tech Stack</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="social-icons">
-            <a href="https://github.com/pavamg" target="_blank">
-                <i class="fab fa-github"></i>
+
+  <!-- ================================================= NAVBAR -->
+  <header id="home" class="navbar">
+    <a href="#home" class="logo" aria-label="Home">
+        <img src="007.png" alt="pavanmg logo">
+    </a>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social">
+      <!-- 아이콘 SVG/PNG로 교체 -->
+      <a href="#" aria-label="GitHub"><img src="github.svg" alt=""></a>
+      <a href="#" aria-label="Twitter"><img src="twitter.svg" alt=""></a>
+      <a href="#" aria-label="LinkedIn"><img src="linkedin.svg" alt=""></a>
+    </div>
+  </header>
+
+  <!-- ================================================= HERO -->
+  <main class="hero">
+    <div class="intro-text">
+      <h1>
+        Hi <span class="wave">👋</span>,<br>
+        제 이름은 <span class="highlight">토리</span>예요!<br>
+        저는 웹 개발을 잘 해요!
+      </h1>
+    </div>
+
+    <div class="intro-img">
+      <img src="AnyConv.com__뇌.jpg" alt="토리 프로필 사진">
+    </div>
+  </main>
+
+  <!-- ================================================= TECH STACK -->
+  <section id="stack" class="tech-stack">
+    <h2>My Tech Stack</h2>
+    <p>Technologies I’ve been working with recently</p>
+
+    <ul class="stack-grid">
+      <!-- 1행 -->
+      <li><img src="html5.svg"      alt="HTML5"></li>
+      <li><img src="css3.svg"       alt="CSS3"></li>
+      <li><img src="javascript.svg" alt="JavaScript"></li>
+      <li><img src="react.svg"      alt="React"></li>
+      <li><img src="redux.svg"      alt="Redux"></li>
+      <li><img src="bootstrap.svg"  alt="Bootstrap"></li>
+      <!-- 2행 -->
+      <li><img src="tailwind.svg"   alt="Tailwind CSS"></li>
+      <li><img src="sass.svg"       alt="Sass"></li>
+      <li><img src="git.svg"        alt="Git"></li>
+      <li><img src="superhero.svg"  alt="Hero Icons"></li>
+      <li><img src="vscode.svg"     alt="VS Code"></li>
+      <li><img src="github-dark.svg"     alt="GitHub"></li>
+    </ul>
+  </section>
+
+  <!-- ================================================= PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p>Things I’ve built so far</p>
+
+    <div class="projects-grid">
+
+      <!-- 카드 1 -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="project.png" alt="Project 1 screenshot">
+        </div>
+        <div class="project-content">
+          <h3>Project Title goes here</h3>
+          <p>This is sample project description — random things are here in description. This is sample project lorem ipsum generator for dummy content.</p>
+          <p class="tech-stack"><strong>Tech stack :</strong> HTML , JavaScript, SASS, React</p>
+
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-link">
+                <img src="link_chain.svg" alt="link_chain" aria-hidden="true" class="link-icon">
+                Live Preview
             </a>
-            <a href="https://twitter.com/pavamg" target="_blank">
-                <i class="fab fa-twitter"></i>
+            <a href="#" target="_blank" class="btn-link">
+                <img src="github_fill.svg" alt="github" aria-hidden="true" class="link-icon">
+                View Code
             </a>
-            <a href="https://www.linkedin.com/in/pavamg" target="_blank">
-                <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </article>
+
+      <!-- 카드 2 (복제해서 활용) -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="project.png" alt="Project 1 screenshot">
+        </div>
+        <div class="project-content">
+          <h3>Project Title goes here</h3>
+          <p>This is sample project description — random things are here in description. This is sample project lorem ipsum generator for dummy content.</p>
+          <p class="tech-stack"><strong>Tech stack :</strong> HTML , JavaScript, SASS, React</p>
+
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-link">
+                <img src="link_chain.svg" alt="link_chain" aria-hidden="true" class="link-icon">
+                Live Preview
             </a>
+            <a href="#" target="_blank" class="btn-link">
+                <img src="github_fill.svg" alt="github" aria-hidden="true" class="link-icon">
+                View Code
+            </a>
+          </div>
         </div>
-    </header>
+      </article>
+      <!-- 카드 3 (복제해서 활용) -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="project.png" alt="Project 1 screenshot">
+        </div>
+        <div class="project-content">
+          <h3>Project Title goes here</h3>
+          <p>This is sample project description — random things are here in description. This is sample project lorem ipsum generator for dummy content.</p>
+          <p class="tech-stack"><strong>Tech stack :</strong> HTML , JavaScript, SASS, React</p>
 
-    <section id="intro">
-        <div class="intro-text">
-            <h1>Hi 👋,<br><span>제 이름은 <strong>감자</strong>에요!</span><br>저는 웹 개발을 잘 해요!</h1>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-link">
+                <img src="link_chain.svg" alt="link_chain" aria-hidden="true" class="link-icon">
+                Live Preview
+            </a>
+            <a href="#" target="_blank" class="btn-link">
+                <img src="github_fill.svg" alt="github" aria-hidden="true" class="link-icon">
+                View Code
+            </a>
+          </div>
         </div>
-        <div class="profile-image">
-            <img src="AnyConv.com__뇌.jpg" alt="토리의 사진">
+      </article>
+      <!-- 카드 4 (복제해서 활용) -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="project.png" alt="Project 1 screenshot">
         </div>
-    </section>
+        <div class="project-content">
+          <h3>Project Title goes here</h3>
+          <p>This is sample project description — random things are here in description. This is sample project lorem ipsum generator for dummy content.</p>
+          <p class="tech-stack"><strong>Tech stack :</strong> HTML , JavaScript, SASS, React</p>
 
-    <section id="tech-stack">
-        <h2>My Tech Stack</h2>
-        <p class="subtitle">제가 주로 사용하는 기술 스택들이에요</p>
-        <div class="tech-icons">
-            <img src="html.png" alt="HTML">
-            <img src="css.png" alt="CSS">
-            <img src="javascript.png" alt="JavaScript">
-            <img src="react.png" alt="React">
-            <img src="nodejs.png" alt="Node.js">
-            <img src="mysql.png" alt="MySQL">
-            <img src="sass.png" alt="Sass">
-            <img src="git.png" alt="Git">
-            <img src="superman.png" alt="Super man">
-            <img src="vscode.png" alt="VS Code">
-            <img src="github.png" alt="GitHub">
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-link">
+                <img src="link_chain.svg" alt="link_chain" aria-hidden="true" class="link-icon">
+                Live Preview
+            </a>
+            <a href="#" target="_blank" class="btn-link">
+                <img src="github_fill.svg" alt="github" aria-hidden="true" class="link-icon">
+                View Code
+            </a>
+          </div>
         </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <p class="subtitle">제가 진행한 프로젝트 들이에요</p>
-        <div class="project-list">
-            <div class="project-card">
-                <img src="project1.jpg" alt="프로젝트 1 이미지">
-                <h3>Project Title goes here</h3>
-                <p>This is sample project description random things are here in description</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Live Preview</a>
-                    <a href="#" class="btn">View Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project2.jpg" alt="프로젝트 2 이미지">
-                <h3>Project Title goes here</h3>
-                <p>This is sample project description random things are here in description</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Live Preview</a>
-                    <a href="#" class="btn">View Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project3.jpg" alt="프로젝트 3 이미지">
-                <h3>Project Title goes here</h3>
-                <p>This is sample project description random things are here in description</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Live Preview</a>
-                    <a href="#" class="btn">View Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project4.jpg" alt="프로젝트 4 이미지">
-                <h3>Project Title goes here</h3>
-                <p>This is sample project description random things are here in description</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Live Preview</a>
-                    <a href="#" class="btn">View Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project5.jpg" alt="프로젝트 5 이미지">
-                <h3>Project Title goes here</h3>
-                <p>This is sample project description random things are here in description</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Live Preview</a>
-                    <a href="#" class="btn">View Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project6.jpg" alt="프로젝트 6 이미지">
-                <h3>Project Title goes here</h3>
-                <p>This is sample project description random things are here in description</p>
-                <div class="buttons">
-                    <a href="#" class="btn">Live Preview</a>
-                    <a href="#" class="btn">View Code</a>
-                </div>
-            </div>
+      </article>
+      <!-- 카드 5 (복제해서 활용) -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="project.png" alt="Project 1 screenshot">
         </div>
-    </section>
+        <div class="project-content">
+          <h3>Project Title goes here</h3>
+          <p>This is sample project description — random things are here in description. This is sample project lorem ipsum generator for dummy content.</p>
+          <p class="tech-stack"><strong>Tech stack :</strong> HTML , JavaScript, SASS, React</p>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p class="subtitle">연락주세요!</p>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <p>{007} <span>pavamg</span></p>
-            </div>
-            <div class="footer-contact">
-                <p>+91 12345 09876</p>
-                <p>info@example.com</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://github.com/pavamg" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/pavamg" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/pavamg" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-link">
+                <img src="link_chain.svg" alt="link_chain" aria-hidden="true" class="link-icon">
+                Live Preview
+            </a>
+            <a href="#" target="_blank" class="btn-link">
+                <img src="github_fill.svg" alt="github" aria-hidden="true" class="link-icon">
+                View Code
+            </a>
+          </div>
         </div>
-        <p class="copyright">
-            Designed and built by Pavan MG with Love & Coffee
-        </p>
-    </footer>
+      </article>
+      <!-- 카드 6 (복제해서 활용) -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="project.png" alt="Project 1 screenshot">
+        </div>
+        <div class="project-content">
+          <h3>Project Title goes here</h3>
+          <p>This is sample project description — random things are here in description. This is sample project lorem ipsum generator for dummy content.</p>
+          <p class="tech-stack"><strong>Tech stack :</strong> HTML , JavaScript, SASS, React</p>
+
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn-link">
+                <img src="link_chain.svg" alt="link_chain" aria-hidden="true" class="link-icon">
+                Live Preview
+            </a>
+            <a href="#" target="_blank" class="btn-link">
+                <img src="github_fill.svg" alt="github" aria-hidden="true" class="link-icon">
+                View Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 추가 카드 필요 시 위 구조 복제 -->
+    </div>
+  </section>
+
+  <!-- ================================================= FOOTER -->
+  <footer class="site-footer">
+    <!-- 1행 -->
+    <div class="footer-top">
+      <a href="#home" class="footer-logo" aria-label="Home">
+        <img src="007.svg" alt="pavanmg logo">
+      </a>
+
+      <address class="contact">
+        <a href="tel:+911234509876">+91&nbsp;12345&nbsp;09876</a>
+        <a href="mailto:info@example.com">info@example.com</a>
+      </address>
+
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><img src="github.svg" alt=""></a>
+        <a href="#" aria-label="Twitter"><img src="twitter.svg" alt=""></a>
+        <a href="#" aria-label="LinkedIn"><img src="linkedin.svg" alt=""></a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- 2행 -->
+    <div class="footer-bottom">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#stack">Technologies</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <p class="credit">
+        Designed and built by
+        <a href="https://github.com/your-profile" target="_blank">Pavan MG</a>
+        with <span class="love">Love</span> &amp; <span class="coffee">Coffee</span>
+      </p>
+    </div>
+  </footer>
+
 </body>
 </html>
